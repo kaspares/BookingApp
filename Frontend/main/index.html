@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferty Noclegowe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <div id="search-container" class="search-bar">
+        <div class="search-item">
+            <label for="city">Gdzie jedziemy?</label>
+            <input type="text" id="city" placeholder="Wpisz miasto">
+        </div>
+        <div class="search-item">
+            <label for="check-in">Zameldowanie</label>
+            <input type="date" id="check-in" min="">
+        </div>
+        <div class="search-item">
+            <label for="check-out">Wymeldowanie</label>
+            <input type="date" id="check-out" min="">
+        </div>
+        <div class="select-guests">
+            <label for="guests-adults">Ilość dorosłych</label>
+            <select id="guests-adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5+</option>
+            </select>
+        </div>
+        <div class="select-guests">
+            <label for="guests-children">Ilość dzieci</label>
+            <select id="guests-children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5+</option>
+            </select>
+        </div>
+        <button id="search-button" class="search-button">Szukaj</button>
+    </div>
+
+    <div id="offers-container"></div>
+    <a href="./dashboard/dashboard.html">
+        <button class="dashboard">Dashboard</button>
+    </a>
+    
+    <script src="script.js"></script>
+</body>
+</html>
